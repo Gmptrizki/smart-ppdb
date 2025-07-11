@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-#just testing with django.
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
@@ -7,7 +6,7 @@ import sys
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'smart_ppdb_django.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'system.settings')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
