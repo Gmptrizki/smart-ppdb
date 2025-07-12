@@ -1,9 +1,29 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>Dashboard Smart PPDB</h1>
-    <button class="btn btn-primary" hx-get="{% url 'get_siswa' %}" hx-target="#data-container">
-        Tampilkan Data Siswa
-    </button>
-    <div id="data-container" class="mt-3"></div>
+
+<div class="min-h-[calc(100vh-200px)] flex items-center justify-center text-center">
+    <div>
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-indigo-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent pb-2">
+            SISTEM PENERIMAAN MURID BARU
+        </h1>
+        
+        <p class="text-xl md:text-2xl text-gray-300 mt-2">
+            SMA DAN SMK NEGERI DI DIY
+        </p>
+        
+        <p class="text-lg md:text-xl text-cyan-400/80 mt-4 tracking-widest font-medium">
+            TAHUN 2026
+        </p>
+
+        <div class="mt-10">
+            <a href="#" class="relative inline-block px-6 py-3 font-medium text-white group">
+                <span class="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-gradient-to-r from-cyan-500 to-purple-500 group-hover:translate-x-0 group-hover:translate-y-0"></span>
+                <span class="absolute inset-0 w-full h-full border-2 border-white"></span>
+                <span class="relative">Lihat Alur Pendaftaran</span>
+            </a>
+        </div>
+    </div>
+</div>
+
 {% endblock %}
