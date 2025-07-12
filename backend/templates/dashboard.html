@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Dashboard Smart PPDB</h1>
+    <button class="btn btn-primary" hx-get="{% url 'get_siswa' %}" hx-target="#data-container">
+        Tampilkan Data Siswa
+    </button>
+    <div id="data-container" class="mt-3"></div>
+{% endblock %}
