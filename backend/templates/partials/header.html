@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Smart PPDB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+  </head>
+  <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+    <div class="absolute top-20 left-10 w-96 h-96 bg-indigo-900/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-10 right-10 w-80 h-80 bg-purple-900/10 rounded-full blur-3xl"></div>
+    <div class="absolute inset-0 grid grid-cols-12 opacity-5 pointer-events-none">
+      <div class="border-r border-cyan-500/20"></div>
+      <div class="border-r border-cyan-500/20"></div>
+      <div class="border-r border-cyan-500/20"></div>
+      <div class="border-r border-cyan-500/20"></div>
+      <div class="border-r border-cyan-500/20"></div>
+      <div class="border-r border-cyan-500/20"></div>
+      <div class="border-r border-cyan-500/20"></div>
+      <div class="border-r border-cyan-500/20"></div>
+      <div class="border-r border-cyan-500/20"></div>
+      <div class="border-r border-cyan-500/20"></div>
+      <div class="border-r border-cyan-500/20"></div>
+      <div class="border-r border-cyan-500/20"></div>
+    </div>
+  </div>
+
+  <nav id="navbar" class="fixed top-0 left-0 right-0 bg-gray-900/70 backdrop-blur-lg border-b border-cyan-500/30 z-50 transition-all duration-300">
+    <div class="container mx-auto px-6 py-3">
+      <div class="flex items-center justify-between">
+        <a href="{% url 'dashboard' %}" class="flex items-center">
+          <div class="relative mr-2">
+            <div class="absolute inset-0 bg-cyan-400/30 rounded-md blur-sm"></div>
+            <div class="w-10 h-10 rounded-md bg-gradient-to-br from-indigo-600 to-purple-600 border border-indigo-400/30 flex items-center justify-center relative shadow-lg shadow-indigo-800/20">
+              <div class="absolute inset-[3px] bg-gray-900 rounded-[4px] flex items-center justify-center overflow-hidden">
+                <div class="font-bold text-lg bg-gradient-to-r from-cyan-400 to-indigo-400 bg-clip-text text-transparent">SP</div>
+              </div>
+            </div>
+          </div>
+          <div class="text-xl font-medium bg-gradient-to-r from-indigo-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent flex items-center">Smart PPDB</div>
+        </a>
+
+        <div class="hidden md:flex items-center space-x-1">
+          <a href="{% url 'dashboard' %}" class="text-gray-300 hover:text-cyan-400 px-4 py-2 rounded-md transition-colors duration-200">Dashboard</a>
+          <a href="#" class="text-gray-300 hover:text-cyan-400 px-4 py-2 rounded-md transition-colors duration-200">Pendaftaran</a>
+          <a href="#" class="text-gray-300 hover:text-cyan-400 px-4 py-2 rounded-md transition-colors duration-200">Pengumuman</a>
+          <a href="#" class="text-gray-300 hover:text-cyan-400 px-4 py-2 rounded-md transition-colors duration-200">Kontak</a>
+        </div>
+
+        <div class="flex md:hidden">
+          <button id="mobile-menu-button" class="relative w-10 h-10 focus:outline-none group" aria-label="Toggle menu">
+            <div class="absolute w-5 transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
+              <span id="line1" class="block h-0.5 w-5 bg-cyan-400 mb-1 transform transition duration-300 ease-in-out"></span>
+              <span id="line2" class="block h-0.5 w-5 bg-cyan-400 mb-1 transform transition duration-300 ease-in-out"></span>
+              <span id="line3" class="block h-0.5 w-5 bg-cyan-400 transform transition duration-300 ease-in-out"></span>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="hidden h-0 overflow-hidden transition-all duration-300 ease-in-out">
+        <div class="pt-2 pb-4 space-y-1">
+          <a href="{% url 'dashboard' %}" class="block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 px-4 py-2 rounded-md transition-colors duration-200">Dashboard</a>
+          <a href="#" class="block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 px-4 py-2 rounded-md transition-colors duration-200">Pendaftaran</a>
+          <a href="#" class="block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 px-4 py-2 rounded-md transition-colors duration-200">Pengumuman</a>
+          <a href="#" class="block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 px-4 py-2 rounded-md transition-colors duration-200">Kontak</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</html>
