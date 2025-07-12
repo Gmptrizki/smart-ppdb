@@ -1,16 +1,13 @@
-.main-header {
-    background-color: #4a90e2;
-    padding: 15px 30px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+html {
+    background: url('../img/image-bg.png') no-repeat center center fixed;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-.main-header .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
+body {
+    background-color: rgba(255, 255, 255, 0.7);
 }

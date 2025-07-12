@@ -4,26 +4,29 @@
 
 <div class="min-h-[calc(100vh-200px)] flex items-center justify-center text-center">
     <div>
-        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-indigo-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent pb-2">
+        <h1 class="text-4xl md:text-6xl font-bold text-gray-900">
             SISTEM PENERIMAAN MURID BARU
         </h1>
         
-        <p class="text-xl md:text-2xl text-gray-300 mt-2">
-            SMA DAN SMK NEGERI DI DIY
+        <p class="text-xl md:text-2xl text-gray-700 mt-3">
+            SMA DAN SMK NEGERI DIY
         </p>
         
-        <p class="text-lg md:text-xl text-cyan-400/80 mt-4 tracking-widest font-medium">
+        <p class="text-lg text-gray-500 mt-4 tracking-wider">
             TAHUN 2026
         </p>
 
-        <div class="mt-10">
-            <a href="#" class="relative inline-block px-6 py-3 font-medium text-white group">
-                <span class="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-gradient-to-r from-cyan-500 to-purple-500 group-hover:translate-x-0 group-hover:translate-y-0"></span>
-                <span class="absolute inset-0 w-full h-full border-2 border-white"></span>
-                <span class="relative">Lihat Alur Pendaftaran</span>
+        <div class="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="#" class="w-full sm:w-auto bg-black text-white font-semibold px-8 py-3 rounded-lg shadow-md hover:bg-gray-800 transition-colors duration-300">
+                Peraturan PPDB 2026
+            </a>
+            <a href="#" class="w-full sm:w-auto bg-white text-black font-semibold px-8 py-3 rounded-lg border-2 border-black hover:bg-gray-100 transition-colors duration-300">
+                Lihat Jadwal
             </a>
         </div>
     </div>
 </div>
+
+{% include 'partials/info_cards.html' %}
 
 {% endblock %}
