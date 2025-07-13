@@ -1,34 +1,24 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
-<div class="min-h-[calc(100vh-200px)] flex items-center justify-center text-center">
+  <div class="min-h-[calc(100vh-200px)] flex items-center justify-center text-center">
     <div>
-        <h1 class="text-4xl md:text-6xl font-bold text-gray-900">
-            SISTEM PENERIMAAN MURID BARU
-        </h1>
-        
-        <p class="text-xl md:text-2xl text-gray-700 mt-3">
-            SMA DAN SMK NEGERI DIY
-        </p>
-        
-        <p class="text-lg text-gray-500 mt-4 tracking-wider">
-            TAHUN 2026
-        </p>
+      <h1 class="text-4xl md:text-6xl font-bold text-gray-900">SISTEM PENERIMAAN MURID BARU</h1>
 
-        <div class="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="#" class="w-full sm:w-auto bg-black text-white font-semibold px-8 py-3 rounded-lg shadow-md hover:bg-gray-800 transition-colors duration-300">
-                Peraturan PPDB 2026
-            </a>
-            <a href="#" class="w-full sm:w-auto bg-white text-black font-semibold px-8 py-3 rounded-lg border-2 border-black hover:bg-gray-100 transition-colors duration-300">
-                Lihat Jadwal
-            </a>
-        </div>
+      <p class="text-xl md:text-2xl text-gray-700 mt-3">SMA DAN SMK NEGERI DIY</p>
+
+      <p class="text-lg text-gray-500 mt-4 tracking-wider">TAHUN 2026</p>
+
+      <div class="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#" class="w-full sm:w-auto bg-black text-white font-semibold px-8 py-3 rounded-lg shadow-md hover:bg-gray-800 transition-colors duration-300">Peraturan PPDB 2026</a>
+        <a href="#" class="w-full sm:w-auto bg-white text-black font-semibold px-8 py-3 rounded-lg border-2 border-black hover:bg-gray-100 transition-colors duration-300">Lihat Jadwal</a>
+      </div>
     </div>
-</div>
+  </div>
 
-{% include 'partials/info_cards.html' %}
+  {% include 'partials/info_cards.html' %}
 
-{% include 'partials/step_section.html' %}
+  {% include 'partials/step_section.html' %}
 
+  {% include 'partials/announcement_section.html' %}
 {% endblock %}
